@@ -27,7 +27,19 @@ class Game:
 
 
 
-    #def board(self):
+    def boardPlacement(self, rowChoice, playerColor):
+        if 0 not in self.row1:
+            print('Row full')
+            return False
+        if rowChoice == '1':
+            self.row1.append(playerColor)
+            del self.row1[0]
+            return self.row1
+        else:
+            print('Nope')
+       
+
+
         
        
 
@@ -48,13 +60,18 @@ class Game:
 def main():
     theGame = Game()
 
-    player1 = Player.name()
-    player1Color = Player.color()
+    player1 = 'Mark'
+    player1Color = 'Blu'
 
-    player2 = Player.name()
-    player2Color = Player.color()
+    player2 = 'Jon'
+    player2Color = 'Purp'
+
+    while True:
+        player1Placement = input('Which row, 1-7, do you want to place your color? ')
+        player1Move = theGame.boardPlacement(player1Placement, player1Color)
+        print(theGame.row1)
+        print(theGame.__repr__())
 
 
 
-yay = Game()
-print(yay.__repr__())
+main()
