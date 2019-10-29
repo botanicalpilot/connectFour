@@ -29,67 +29,74 @@ class Game:
 
     def boardPlacement(self, rowChoice, playerColor):
         #row1
-        if 0 not in self.row1:
-            print('Row full, try a different row')
-            #return True
-        elif rowChoice == '1':
-            self.row1.append(playerColor)
-            del self.row1[0]
-            return self.row1
+        if rowChoice == '1':
+            if 0 not in self.row1:
+                print('Row full, try a different row')
+                #return True
+            elif rowChoice == '1':
+                self.row1.append(playerColor)
+                del self.row1[0]
+                return self.row1
         
         #row2
-        if 0 not in self.row2:
-            print('Row full, try a different row')
-            #return True
-        elif rowChoice == '2':
-            self.row2.append(playerColor)
-            del self.row2[0]
-            return self.row2
+        if rowChoice == '2':
+            if 0 not in self.row2:
+                print('Row full, try a different row')
+                #return True
+            elif rowChoice == '2':
+                self.row2.append(playerColor)
+                del self.row2[0]
+                return self.row2
         
         #row3
-        if 0 not in self.row3:
-            print('Row full, try a different row')
-            #return True
-        elif rowChoice == '3':
-            self.row3.append(playerColor)
-            del self.row3[0]
-            return self.row3
+        if rowChoice == '3':
+            if 0 not in self.row3:
+                print('Row full, try a different row')
+                #return True
+            elif rowChoice == '3':
+                self.row3.append(playerColor)
+                del self.row3[0]
+                return self.row3
         
         #row4
-        if 0 not in self.row4:
-            print('Row full, try a different row')
-            #return True
-        elif rowChoice == '4':
-            self.row4.append(playerColor)
-            del self.row4[0]
-            return self.row4
+        if rowChoice == '4':
+            if 0 not in self.row4:
+                print('Row full, try a different row')
+                #return True
+            elif rowChoice == '4':
+                self.row4.append(playerColor)
+                del self.row4[0]
+                return self.row4
         
         #row5
-        if 0 not in self.row5:
-            print('Row full, try a different row')
-            #return True
-        elif rowChoice == '5':
-            self.row5.append(playerColor)
-            del self.row5[0]
-            return self.row5
+        if rowChoice == '5':
+            if 0 not in self.row5:
+                print('Row full, try a different row')
+                #return True
+            elif rowChoice == '5':
+                self.row5.append(playerColor)
+                del self.row5[0]
+                return self.row5
         
         #row6
-        if 0 not in self.row6:
-            print('Row full, try a different row')
-            #return True
-        elif rowChoice == '6':
-            self.row6.append(playerColor)
-            del self.row6[0]
-            return self.row6
+        if rowChoice == '6':
+            if 0 not in self.row6:
+                print('Row full, try a different row')
+                #return True
+            elif rowChoice == '6':
+                self.row6.append(playerColor)
+                del self.row6[0]
+                return self.row6
         
         #row7
-        if 0 not in self.row7:
-            print('Row full, try a different row')
-            #return True
-        elif rowChoice == '7':
-            self.row7.append(playerColor)
-            del self.row7[0]
-            return self.row7
+        if rowChoice == '7':
+            if 0 not in self.row7:
+                print('Row full, try a different row')
+                #return True
+            elif rowChoice == '7':
+                self.row7.append(playerColor)
+                del self.row7[0]
+                return self.row7
 
 
        
@@ -116,21 +123,20 @@ def main():
     theGame = Game()
 
     player1 = 'Mark'
-    player1Color = 'Blu'
+    player1Color = '*'
 
     player2 = 'Jon'
-    player2Color = 'Pur'
+    player2Color = '#'
 
+    
     while True:
-        test = True
-        while True:
-            player1Placement = input('Which row, 1-7, do you want to place your color? ')
-            player1Move = theGame.boardPlacement(player1Placement, player1Color)
-            print(theGame.__repr__())
+        player1Placement = input(f'{player1}, which row, 1-7, do you want to place your color? ')
+        player1Move = theGame.boardPlacement(player1Placement, player1Color)
+        print(theGame.__repr__())
 
-            player2Placement = input('Which row, 1-7, do you want to place your color? ')
-            player2Move = theGame.boardPlacement(player2Placement, player2Color)
-            print(theGame.__repr__())
+        player2Placement = input(f'{player2}, which row, 1-7, do you want to place your color? ')
+        player2Move = theGame.boardPlacement(player2Placement, player2Color)
+        print(theGame.__repr__())
 
 
 
