@@ -23,7 +23,7 @@ class Game:
 
     def __repr__(self):
 
-         return f'{self.row1[5]}|{self.row2[5]}|{self.row3[5]}|{self.row4[5]}|{self.row5[5]}|{self.row6[5]}|{self.row7[5]}\n{self.row1[4]}|{self.row2[4]}|{self.row3[4]}|{self.row4[4]}|{self.row5[4]}|{self.row6[4]}|{self.row7[4]}\n{self.row1[3]}|{self.row2[3]}|{self.row3[3]}|{self.row4[3]}|{self.row5[3]}|{self.row6[3]}|{self.row7[3]}\n{self.row1[2]}|{self.row2[2]}|{self.row3[2]}|{self.row4[2]}|{self.row5[2]}|{self.row6[2]}|{self.row7[2]}\n{self.row1[1]}|{self.row2[1]}|{self.row3[1]}|{self.row4[1]}|{self.row5[1]}|{self.row6[1]}|{self.row7[1]}\n{self.row1[0]}|{self.row2[0]}|{self.row3[0]}|{self.row4[0]}|{self.row5[0]}|{self.row6[0]}|{self.row7[0]}'
+         return f'{self.row1[0]}|{self.row2[0]}|{self.row3[0]}|{self.row4[0]}|{self.row5[0]}|{self.row6[0]}|{self.row7[0]}\n{self.row1[1]}|{self.row2[1]}|{self.row3[1]}|{self.row4[1]}|{self.row5[1]}|{self.row6[1]}|{self.row7[1]}\n{self.row1[2]}|{self.row2[2]}|{self.row3[2]}|{self.row4[2]}|{self.row5[2]}|{self.row6[2]}|{self.row7[2]}\n{self.row1[3]}|{self.row2[3]}|{self.row3[3]}|{self.row4[3]}|{self.row5[3]}|{self.row6[3]}|{self.row7[3]}\n{self.row1[4]}|{self.row2[4]}|{self.row3[4]}|{self.row4[4]}|{self.row5[4]}|{self.row6[4]}|{self.row7[4]}\n{self.row1[5]}|{self.row2[5]}|{self.row3[5]}|{self.row4[5]}|{self.row5[5]}|{self.row6[5]}|{self.row7[5]}'
 
 
 
